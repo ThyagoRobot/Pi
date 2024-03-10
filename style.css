@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Micro+4&display=swap');
+
+body {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-areas: 
+    'meio1 topo topo topo topo'
+    'meio1 meio2 meio2 meio2 meio3'
+    'meio1 rodape rodape rodape meio3'
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+
+    padding-block:15px;
+    font-family: "Micro 5", sans-serif; 
+}
+/* 
+        exemplo rapido do uso de media querie 
+        quando a largura da tela for no maximo 600px
+        troca a cor do body
+        */
+        @media only screen and (max-width: 600px){
+            body {
+                background-color: brown;
+            }
+        }
+
+        /* 
+        exemplo rapido do uso de media querie 
+        quando a largura da tela for no minimo 601 e no maximo 900
+        troca a cor do body
+        */
+        @media only screen and (min-width: 601px) and (max-width: 900px){
+            body {
+                background-color: cadetblue;
+            }
+        }
+
+#menuglobal{
+    list-style-type:none;
+    display: inline-block; 
+     width: 100%; 
+}
+#cabecalho {
+    
+    display: inline-block; 
+    justify-content: space-between;
+    align-items:left;
+    text-align: left;
+     background-color: white ; 
+    padding:1rem; 
+}
+#c_entro_img {
+    
+   display: inline-block; 
+   justify-content: space-between; 
+   align-items:center;
+   text-align: left;
+   height:25vw;
+   width:45vw;
+   background-color: #8C52FF;
+   border-radius:16px;
+   padding:1rem; 
+   font-size: x-large ;
+
+}
+
+#corpo { 
+    /*display: inline-block; 
+     justify-content: space-between; */
+    align-items:left;
+    text-align: left;
+    text-size-adjust: 80px;
+     background-color: rgb(255, 255, 255) ; 
+    padding:1rem;  
+    border-top:solid rgb(184, 184, 184);
+    border-width:2px; 
+}
+
+#corpo1 { 
+    display: center ; /*inline-block; */
+     justify-content: space-between; 
+    align-items:left;
+    text-align: left;
+    text-size-adjust: 80px;
+     background-color: rgb(255, 255, 255) ; 
+    padding:1rem;  
+    border-width:2px;
+    height:204%; 
+}
+#corpo2 { 
+    display: inline-block; 
+     justify-content: space-between; 
+    align-items:left;
+    text-align: left;
+    text-size-adjust: 80px;
+     background-color: rgb(255, 255, 255) ; 
+    padding:1rem;  
+    border-width:2px;
+    height:138%; 
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse:collapse;
+    }  
+h1 {
+    text-align: center;
+}
+
+.azul {
+    color: blue;
+}
+.branco {
+    color: white
+}
+
+.traco {
+    text-decoration: line-through;
+}
+
+#fonteGrande {
+    font-size: xx-large;
+}
+
+/* essa regra indica que todo paragrafo decendente de uma div vai ter a cor do texto verde */
+div p {
+    color: #16ade880;
+}
+
+div > p {
+    background-color: yellow;
+}
+
+div + p {
+    font-size: xx-small;
+}
+
+
+div ~ p {
+    border: 2px dashed purple;
+}
+
+.mouse:hover {
+    text-decoration: underline;
+}
+
+input:focus {
+    outline: 3px dotted red;
+}
+
+p::first-line {
+    color: hotpink;
+}
+
+p::first-letter {
+    font-size: xx-large;
+}
+
+li::marker {
+    color: blueviolet;
+}
+
+p::selection {
+    background-color: rgb(255, 255, 255);
+}
+
+a[target='_blank'] {
+    color: aqua;
+}
+
+table, th, td {
+    border: 1px solid black;
+   /*  border-collapse: collapse; */
+    border-radius: 10px;
+}
+
+p {
+    margin: 50px 10px 5px 1px;
+    padding: 30px;
+}
+
+.quadrado {
+    height: 200px;
+    width: 50%;
+    overflow: auto;
+}
+.f_lexivel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; /* space-between;*/
+    align-items: start;
+    align-content:flex-start /*space-between*/
+
+}
+.fonteresponsiva {
+    font-size: 20vw;
+}
+
+.relativa {
+    
+    position: relative;
+   /*  top: 20px;
+    left: 50px; */
+}
+
+.absoluta {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+}
+
+#zeratudo {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+img {
+    opacity: 1;
+}
+
+img:hover {
+    opacity: 0.5;
+}
+
+.flexivel {
+    display: inline-block; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+    align-content: space-between;
+
+}
+
+.menor {
+    height: 20px;
+    width: 20px;
+    background-color: blueviolet;
+    text-align: center;
+}
+
+.diferente {
+    height: 30px;
+}
+
+.item1 { 
+    grid-area: topo;
+    background-color: rgb(255, 255, 255);
+    border-bottom;:solid rgb(184, 184, 184) 
+}
+
+.item2 { 
+    grid-area: meio1;
+    background-color: rgba(0, 0, 255, 0.428);
+    height: 129%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-right:solid rgb(184, 184, 184);
+    border-width: 2px; 
+}
+
+.item3 { 
+    grid-area: meio2;
+    background-color: blueviolet;
+    text-align: justify;
+    border-radius: 5px;
+}
+
+.item4 {
+    grid-area: meio3;
+    background-color: brown;
+    text-align: center;
+    font-size: small;
+}
+
+.item5 {
+    grid-area: rodape;
+    background-color: red;
+}
+
+.item1, .item2, .item3, .item4, .item5 {
+    padding: 1rem;
+}
+span {
+    color: rgb(255, 255, 255) 
+}
+
+
+.voce{
+    style; font-size: 40px;
+    text-decoration: none;
+    color: white;
+    font-size:3vw;
+}
+.voce2{
+    style; font-size: 4vw/*40px; */
+    text-decoration: none;
+    color: white;
+    font-size:2vw;
+}
+.imgcentro{
+/*
+    display: inline-block; 
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+    align-content: space-between;
+*/
+    #imgpos {
+        display: flex;
+        width="250px"
+        height="350px"
+        flex-direction: column;
+		position:absolute;
+		left:50%;
+		top:24%;
+		*margin-left:-100px;
+		margin-top:-30px; 
+		}
+}
+        /* criei uma 'caixa' para conter as imagens em apenas 25% da pagina */
+        .retrato {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            position:absolute;
+            left:60%;
+            top:45%;
+        }
+.textocolor{
+    color: rgb(255, 255, 255);
+    display: inline;
+}
+.botao{
+    
+    color: #8C52FF;
+    text-decoration:none;
+    background:white;
+    border-radius:20px;
+    padding:2vw;
+    border:solid #ffffff ;
+    font-size:1vw;
+}
+.botao2{
+    
+    color: #ffffff;
+    text-decoration:none;
+    background:#8C52FF;
+    border-radius:20px;
+    padding:2vw;
+    border:solid #ffffff ; 
+    font-size:1vw;
+}
+.t_exto{
+    padding:2vw;
+    font-size:1vw;
+}
+
+/* isso eh fim do gride */

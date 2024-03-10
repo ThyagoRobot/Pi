@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: inline-block; 
+            grid-template-areas: 
+            'topo topo topo topo topo'
+            'meio1 meio2 meio2 meio2 meio3'
+            'meio1 rodape rodape rodape rodape'
+            ;
+            color: white;
+
+        }
+
+        .item1 {
+            grid-area: topo;
+            background-color: green;
+        }
+
+        .item2 {
+            grid-area: meio1;
+            background-color: rgba(0, 0, 255, 0.428);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .item3 {
+            grid-area: meio2;
+            background-color: blueviolet;
+            text-align: justify;
+        }
+
+        .item4 {
+            grid-area: meio3;
+            background-color: brown;
+            text-align: center;
+            font-size: small;
+        }
+
+        .item5 {
+            grid-area: rodape;
+            background-color: red;
+            border:none;
+        }
+
+        .item1, .item2, .item3, .item4, .item5 {
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="item1">
+        <img src="senac_logo.png" alt="" width="50px" height="50px">
+    </div>
+    
+    <div class="item2">
+        <a href="grid.html">Home</a>
+        <a href="#">Sobre Nos</a>
+        <a href="#">Contato</a>
+    </div>
+    
+    <div class="item3">
+        <p>Lorem ipsum dolor  neque dolore.</p>
+    
+    </div>
+    
+    <div class="item4">
+        <p>Lorem ipsum, dolor sit</p>
+    </div>
+    
+    <div class="item5">Rodape</div>
+</body>
+</html>
