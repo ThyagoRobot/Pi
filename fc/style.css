@@ -56,9 +56,6 @@ body {
     align-items: center; 
     gap: 20px;
     
-
-    
-   
 }
  
 
@@ -73,9 +70,7 @@ body {
 
 .item4 {
     grid-area: meio3;
-    background-color: brown;
-    text-align: center;
-    font-size: small;
+    
 }
 
 .item5 {
@@ -123,7 +118,7 @@ body {
     height: 204%;
 }
 
-#corpo2 {
+/* #corpo2 {
     display: inline-block;
     justify-content: space-between;
     align-items: left;
@@ -132,8 +127,18 @@ body {
     background-color: rgb(255, 255, 255);
     padding: 1rem;
     border-width: 2px;
-    height: 138%;
+    height: 138%; 
+} */
+
+#corpo2  {
+    width: 221px;
 }
+#corpo2 .center-text{
+    display: flex;
+    align-items: center;
+    padding-top: 14px;
+}
+
 
 table,
 th,
