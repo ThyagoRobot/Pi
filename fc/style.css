@@ -11,7 +11,7 @@ body {
 * {
     box-sizing: border-box;
     margin: 0;
-    padding-block: 15px;
+    padding: 0;
     font-family: "Micro 5", sans-serif;
 }
 
@@ -19,17 +19,70 @@ body {
     list-style-type: none;
     display: inline-block;
     width: 100%;
+    
 }
 
 #cabecalho {
-
-    display: inline-block;
+    
     justify-content: space-between;
     align-items: left;
     text-align: left;
-    background-color: white;
-    padding: 1rem;
+    padding: 2rem;
 }
+.item1 a{
+    text-decoration: none;
+}
+
+
+.item1 {
+    grid-area: topo;
+    background-color: rgb(255, 255, 255);
+    border-bottom: solid rgb(184, 184, 184);
+    display: flex;
+    
+}
+
+.item2 {
+    grid-area: meio1;
+    border-right: solid rgb(184, 184, 184);
+    border-width: 2px;
+    width: 265px;
+    padding-left: 35px;
+    
+}
+.item2 .center-text {
+    padding-top: 30px;
+    display: flex;
+    align-items: center; 
+    gap: 20px;
+    
+
+    
+   
+}
+ 
+
+
+
+.item3 {
+    grid-area: meio2;
+    background-color: blueviolet;
+    text-align: justify;
+    border-radius: 5px;
+}
+
+.item4 {
+    grid-area: meio3;
+    background-color: brown;
+    text-align: center;
+    font-size: small;
+}
+
+.item5 {
+    grid-area: rodape;
+    background-color: red;
+}
+
 
 #c_entro_img {
 
@@ -111,50 +164,9 @@ h1 {
 }
 
 /* essa regra indica que todo paragrafo decendente de uma div vai ter a cor do texto verde */
-div p {
-    color: #16ade880;
-}
-
-div>p {
-    background-color: yellow;
-}
-
-div+p {
-    font-size: xx-small;
-}
 
 
-div~p {
-    border: 2px dashed purple;
-}
 
-.mouse:hover {
-    text-decoration: underline;
-}
-
-input:focus {
-    outline: 3px dotted red;
-}
-
-p::first-line {
-    color: hotpink;
-}
-
-p::first-letter {
-    font-size: xx-large;
-}
-
-li::marker {
-    color: blueviolet;
-}
-
-p::selection {
-    background-color: rgb(255, 255, 255);
-}
-
-a[target='_blank'] {
-    color: aqua;
-}
 
 table,
 th,
@@ -164,10 +176,6 @@ td {
     border-radius: 10px;
 }
 
-p {
-    margin: 50px 10px 5px 1px;
-    padding: 30px;
-}
 
 .quadrado {
     height: 200px;
@@ -175,9 +183,7 @@ p {
     overflow: auto;
 }
 
-.fonteresponsiva {
-    font-size: 20vw;
-}
+
 
 .relativa {
     position: relative;
@@ -226,49 +232,7 @@ img:hover {
     height: 30px;
 }
 
-.item1 {
-    grid-area: topo;
-    background-color: rgb(255, 255, 255);
-    border-bottom: solid rgb(184, 184, 184);
-}
 
-.item2 {
-    grid-area: meio1;
-    background-color: rgba(0, 0, 255, 0.428);
-    height: 129%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    border-right: solid rgb(184, 184, 184);
-    border-width: 2px;
-}
-
-.item3 {
-    grid-area: meio2;
-    background-color: blueviolet;
-    text-align: justify;
-    border-radius: 5px;
-}
-
-.item4 {
-    grid-area: meio3;
-    background-color: brown;
-    text-align: center;
-    font-size: small;
-}
-
-.item5 {
-    grid-area: rodape;
-    background-color: red;
-}
-
-.item1,
-.item2,
-.item3,
-.item4,
-.item5 {
-    padding: 1rem;
-}
 
 span {
     color: rgb(255, 255, 255)
