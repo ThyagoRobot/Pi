@@ -33,6 +33,41 @@ body {
     padding: 2rem;
 }
 
+.search-bar {
+    height: 60px;
+    background-color: #8C52FF;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+}
+.search-txt{
+    border: none;
+    outline: none;
+    background:none;
+    color: white;
+    font-size: 15px;
+    line-height: 40px;
+    width: 0;
+    padding: 0;
+}
+.search-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #8C52FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar:hover > .search-txt{
+    width: 240px;
+    flex-direction: row-reverse;
+
+}
+
 .item1 a {
     text-decoration: none;
 }
@@ -48,18 +83,21 @@ body {
     height: 100px;
 
 }
-.home{
+
+.home {
     padding-right: 600px;
     font-size: 25px;
     color: black;
 }
-.cab-img{
+
+.cab-img {
     display: flex;
     gap: 20px;
     padding-inline: 70px;
 
 }
-.login{
+
+.login {
     padding-left: 20px;
 }
 
@@ -176,17 +214,18 @@ p {
 
 }
 
-.text-inicio{
+.text-inicio {
     text-decoration: none;
     font-size: 25px;
 }
-.inicio { 
+
+.inicio {
     padding-bottom: 0px;
     padding-right: 0px;
     padding: 15px;
     display: flex;
     align-items: center;
-    border-right: 1px solid rgb(184, 184, 184);  
+    border-right: 1px solid rgb(184, 184, 184);
 }
 
 #corpo2 .center-text {
