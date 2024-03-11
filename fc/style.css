@@ -3,12 +3,13 @@
 body {
     display: grid;
     grid-template-areas:
-        'meio1 topo topo topo topo'
+        'maio1 topo topo topo topo'
         'meio1 meio2 meio2 meio2 meio3'
         'meio1 rodape rodape rodape meio3';
     width: 100vh;
     height: 100vh;
-    
+
+
 }
 
 * {
@@ -22,17 +23,17 @@ body {
     list-style-type: none;
     display: inline-block;
     width: 100%;
-    
+
 }
 
 #cabecalho {
-    
-    justify-content: space-between;
+    width: 180vh;
     align-items: left;
     text-align: left;
     padding: 2rem;
 }
-.item1 a{
+
+.item1 a {
     text-decoration: none;
 }
 
@@ -40,42 +41,62 @@ body {
 .item1 {
     grid-area: topo;
     background-color: rgb(255, 255, 255);
+    /* border-left: 1px solid rgb(184, 184, 184); */
     border-bottom: 1px solid rgb(184, 184, 184);
     display: flex;
-    
+    align-items: center;
+    height: 100px;
+
+}
+.home{
+    padding-right: 600px;
+    font-size: 25px;
+    color: black;
+}
+.cab-img{
+    display: flex;
+    gap: 20px;
+    padding-inline: 70px;
+
+}
+.login{
+    padding-left: 20px;
 }
 
 .item2 {
     grid-area: meio1;
     border-right: solid rgb(184, 184, 184);
     border-width: 1px;
-    width: 213px;
-    margin-left: 70px;
-    
-    
+    width: 256px;
+    height: 83vh;
+
+
+
 }
+
 .item2 .center-text {
-    padding-top: 30px;
+    padding: 26px;
+    padding-left: 53px;
     display: flex;
-    align-items: center; 
+    align-items: center;
     gap: 20px;
-    
+
 }
- 
 
 
 
- .item3 {
+
+/* .item3 {
     grid-area: meio2;
     background-color: blueviolet;
     text-align: justify;
     border-radius: 5px;
-} 
+} */
 
-.item4 {
+/* .item4 {
     grid-area: meio3;
     
-}
+} */
 
 .item5 {
     grid-area: rodape;
@@ -92,16 +113,25 @@ body {
     background-color: #8C52FF;
     border-radius: 16px;
     padding: 2rem;
-    gap: 10px;
+    gap: 26px;
+    width: 110vh;
+}
+
+.centro-1,
+p {
+    font-size: 20px;
 }
 
 
-
 #centro {
-    width: 148vh;
+    display: flex;
+    grid-area: meio2;
+    width: 133vh;
     background-color: rgb(255, 255, 255);
     padding: 2rem;
     border-width: 2px;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -110,12 +140,16 @@ body {
     width: 80px;
     height: 80px;
 }
-.corpo1{
+
+.corpo1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    width: 110vh;
+    padding: 32px;
 }
-.corpo1-div{
+
+.corpo1-div {
     align-items: center;
     display: flex;
     gap: 50px;
@@ -137,14 +171,35 @@ body {
     height: 138%; 
 } */
 
-#corpo2  {
-    width: 20px;
+#corpo2 {
+    grid-area: meio3;
+
 }
-#corpo2 .center-text{
+
+.text-inicio{
+    text-decoration: none;
+    font-size: 25px;
+}
+.inicio { 
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding: 15px;
     display: flex;
     align-items: center;
-    padding-top: 14px;
+    border-right: 1px solid rgb(184, 184, 184);  
 }
+
+#corpo2 .center-text {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-right: 150px;
+}
+
+.center-text {
+    gap: 20px;
+}
+
 
 
 /* table,
@@ -167,9 +222,11 @@ td {
 .traco {
     text-decoration: line-through;
 }
-.espacing{
+
+.espacing {
     display: flex;
 }
+
 #fonteGrande {
     font-size: xx-large;
 }
@@ -262,7 +319,8 @@ span {
     color: rgb(255, 255, 255);
     display: inline;
 }
-.btn{
+
+.btn {
     display: flex;
     flex-direction: row;
     gap: 20px;
