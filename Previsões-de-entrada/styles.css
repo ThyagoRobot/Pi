@@ -103,35 +103,10 @@ body {
     background-color: red;
 }
 
-
-.centro-1 {
-
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    color: white;
-    background-color: #8C52FF;
-    border-radius: 16px;
-    padding: 2rem;
-    gap: 26px;
-    width: 110vh;
-}
-
-.centro-1,
-p {
-    font-size: 20px;
-}
-
-
 #centro {
     display: flex;
     grid-area: meio2;
-    width: 133vh;
-    background-color: rgb(255, 255, 255);
-    padding: 2rem;
-    border-width: 2px;
-    flex-direction: column;
-    align-items: center;
+    padding: 80px;
 }
 
 
@@ -352,5 +327,10 @@ span {
     border: solid #ffffff;
 }
 
+.btn-centro {
+    height: 40px;
+    width: 100px;
+    background-color: #8C52FF;
+}
 
 /* isso eh fim do gride */
