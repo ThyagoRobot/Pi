@@ -20,7 +20,7 @@ header {
   color: black;
   border-right: 0.0625rem solid #e0e0e0;
   margin: 0 auto;
-  background-color: aliceblue;
+  background-color: #fff;
   position: fixed;
   height: 100%;
   width: 300px;
@@ -62,8 +62,8 @@ header {
   padding-top: 2rem;
   background-color: #f2f2f2;
   height: 100%;
-    position: fixed;
-    width: 100%;
+  position: fixed;
+  width: 100%;
 }
 .nav-content a {
   color: #fff;
@@ -92,4 +92,5 @@ button.btn.btn-secondary {
   display: flex;
   margin-bottom: 1rem;
   border-radius: .25rem;
+  
 }
