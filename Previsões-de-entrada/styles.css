@@ -274,6 +274,14 @@
     display: flex;
     flex-direction: column;
   }
+  .itens-buttons {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    background-color: #f7f7f7;
+    height: 100%;
+   
+  }
   .buttons-right {
     padding-right: 0;
     display: flex;
@@ -292,6 +300,9 @@
   .cont-itens {
     /* display: none; */
     width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
   }
   .right {
     width: 100%;
@@ -313,13 +324,14 @@
     gap: 28px;
     min-width: 0;
     padding-left: 0;
+    margin-bottom: 0;
   }
 
   .itens-buttons button {
     color: #8a8a8a;
     background-color: #fff;
     border-color: #fff;
-    width: 50px;
+    width: 100px;
   }
   .valor {
     display: flex;
