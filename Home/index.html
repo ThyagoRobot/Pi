@@ -1,109 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Pagina para aprendizado de HTML" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pi</title>
     <link rel="shortcut icon" href="img/grito.png" type="image/x-icon" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body>
-    <div class="conteudo">
-        <nav class="left">
-            <div class="logo">
-                <a href="http://google.com" target="_blank">
-                    <img src="/img/logo.png"  alt="" target="_blank">
-                    <span class="title-logo">Inicio</span>
-                </a>
+  <body>
+    <div id="conteudo">
+      <nav class="left">
+        <div class="logo">
+          <a href="http://google.com" target="_blank">
+            <img src="/img/logo.png" alt="" target="_blank" />
+            <span class="title-logo">Início</span>
+          </a>
+          <div class="left-buttons">
+            <a href="#">
+                <img src="img/img_contas_pagar.png" alt="">
+                <span>Contas a pagar</span>
+            </a>
+            <a href="#">
+                <img src="img/img_contas_receber.png" alt="">
+                <span>Contas a receber</span>
+            </a>
+            <a href="#">
+                <img src="img/Img_pessoa.png" alt="">
+                <span>Clientes</span>
+            </a>
+            <a href="#">
+                <img src="img/Img_pessoa.png" alt="">
+                <span>Fornecedor</span>
+            </a>
+            <a href="#">
+                <img src="img/img_mensagens.png" alt="">
+                <span>Menssagens</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <nav class="right">
+        <div class="itens-right">
+          <div class="itens">
+            <h1>Home</h1>
+            <div class="buttons-right">
+              <input
+                type="search"
+                class="form-control rounded"
+                placeholder="Saldo, Extrato, DRE, etc ..."
+                aria-label="Search"
+                aria-describedby="search-addon"
+              />
+              <a class="login" href="#" style="color: #8c52ff">Login</a>
             </div>
-            <!-- <hr width="100%">
-            <p>davi castro</p> -->
-        </nav>
-        <nav class="right">
-            <div class="itens-right">
-                <div class="itens">
-                    <h1>Contas a pagar</h1>
-                    <div class="buttons-right">
-                        <input type="search" class="form-control rounded" placeholder="Saldo, Extrato, DRE, etc ..." aria-label="Search"
-                            aria-describedby="search-addon" />
-                        <a class="login" href="#" style="color: #8C52FF;">Login</a>
-                    </div>
-
-                </div>
+          </div>
+        </div>
+        <div class="itens-right-cont">
+          <div class="itens-buttons">
+            <ul>
+              <li></li>
+            </ul>
+          </div>
+          <div class="cont-itens">
+            <div class="cont">
+              <img src="/Home/img/Grafico.png" alt="" />
+              <div class="cont-text">
+                <h1>Conta/Origem da Receita</h1>
+                <p>Informe aqui sua Conta Origem</p>
+                <hr style="width: 50px; margin-left: 0" />
+                <p style="color: #8c52ff">Veja Mais</p>
+              </div>
             </div>
-            <div class=" itens-right-cont">
-                <div class="itens-buttons">
-                    <ul>
-                        <li>
-                            <button type="button" class="btn btn-outline-dark"
-                                style=" color: #fff; background-color: #8C52FF;">Cartão</button>
-                        </li>
-                        <li>
-                            <button type="button" class="btn btn-outline-dark">Pix</button>
-
-                        </li>
-                        <li>
-                            <button type="button" class="btn btn-outline-dark">Cheque</button>
-
-                        </li>
-                        <li>
-                            <button type="button" class="btn btn-outline-dark">Dinheiro</button>
-                        </li>
-                        <li>
-                            <button type="button" class="btn btn-outline-dark">Boleto</button>
-                        </li>
-                    </ul>
-                </div>
-                <div class="cont-itens">
-                    <div class="cont">
-                        <img src="/Home/img/Grafico.png" alt="">
-                        <div class="cont-text">
-                            <h1>Conta/Origem da Receita</h1>
-                            <p>Informe aqui sua Conta Origem</p>
-                            <hr style="width: 50px; margin-left: 0;" >
-                            <p style="color: #8C52FF;">Veja Mais</p>
-                        </div>
-                    </div>
-                    <div class="cont">
-                        <img src="/img/s2.webp" alt="">
-                        <div class="cont-text">
-                            <h1>Cliente</h1>
-                            <p>Informe aqui seu Nome de Cliente</p>
-                            <hr style="width: 50px; margin-left: 0;" >
-                            <p style="color: #8C52FF;">Veja Mais</p>
-                        </div>
-                    </div>
-                    <div class="cont">
-                        <img src="/img/s2.webp" alt="">
-                        <div class="cont-text">
-                            <div class="valor">
-                                <h1>Valor</h1> 
-                                <h1>À Vista 30 60 90</h1>
-                            </div>
-                            <p>Informe Valor total:</p>
-                            <hr style="width: 50px; margin-left: 0;" >
-                            <p style="color: #8C52FF;">Veja Mais</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- <nav class="it">
+          </div>
+        </div>
+        <!-- <nav class="it">
                 <div class="itens"></div>
     
             </nav> -->
-        </nav>
-        <!-- <section>
+      </nav>
+      <!-- <section>
             <h1>ola mundo</h1>
             <hr width="100%">
             <h2>davi</h2>
         </section> -->
-
     </div>
-</body>
-
+  </body>
 </html>
