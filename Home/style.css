@@ -98,25 +98,40 @@
 .nav-right-cont {
   margin: 30px;
   padding-left: 50px;
+  width: 65rem;
   padding: 25px;
   display: flex;
   flex-direction: column;
 }
 
 .painel-center {
-  width: 60rem;
+  display: flex;
+  width: 100%;
   height: 300px;
-  background-color: purple;
+  background-color: #8c52ff;
   border-radius: 20px;
+  padding: 30px;
 }
+.cont-itens {
+  display: flex;
+  width: 40rem;
+}
+.cont-itens img{
+  height: 15rem;
 
+}
+.itens-buttons {
+  margin-top: 1rem;
+}
 .itens-buttons ul {
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  gap: 28px;
+  /* gap: 28px; */
   min-width: 910px;
   padding-left: 0px;
+  width: 100%;
+  justify-content: space-between;
 }
 .itens-buttons button {
   color: #8a8a8a;
@@ -135,23 +150,57 @@
 .btn-outline-dark {
   width: 160px;
 }
-.cont-itens .cont {
-  border-radius: 10px;
-}
 
-.painel-link ul li{
+.painel-link {
   display: flex;
-  flex-direction: row !important;
-  width: 960px;
+  width: 100%;
 }
 .painel-link {
-  
+  display: flex;
+  width: 100%;
 }
 .card-painel {
   display: flex;
   background-color: #fff;
-  width: 47%;
+  width: 30rem;
+  align-items: center;
+  height: 10rem;
+  border-radius: 20px;
+  padding: 30px;
+  /* flex-wrap: wrap; */
+}
+.painel-link-text {
+  flex-direction: column;
+  height: 120px;
+  justify-content: center;
+  padding-left: 20px;
+}
+.card-painel img {
+  display: flex;
+  padding-left: 5px;
 }
 .painel-link-text h1 {
   font-size: 20px;
+  margin-bottom: 0;
+}
+.hr {
+  width: 50px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.p {
+  color: #8a8a8a;
+  margin-bottom: 0 !important;
+}
+.pv {
+  color: #8c52ff;
+  margin-bottom: 0 !important;
+}
+.card-painel-itens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.right-painel-center{
+  background-color: #8c52ff;
 }
