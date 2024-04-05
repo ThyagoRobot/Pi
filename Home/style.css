@@ -12,6 +12,20 @@
   /* height: 100vh; */
 }
 
+.left {
+  width: 30%;
+  font-size: 20px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  left: 0;
+  height: 100vh;
+  bottom: 0;
+  top: 0;
+  /* height: 100%; */
+  background-color: #fff;
+  
+}
 .left-buttons {
   padding-top: 60px;
   padding-left: 50px;
@@ -40,26 +54,6 @@
   padding-top: 20px;
   padding-left: 20px;
   text-decoration: none;
-}
-
-.left {
-  width: 400px;
-  font-size: 20px;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  left: 0;
-  /* height: 100vh; */
-  bottom: 0;
-  top: 0;
-  /* height: 100%; */
-  background-color: #fff;
-  border-right: 0.0625rem solid #e0e0e0;
-}
-
-#right {
-  width: 100%;
-  background-color: #f7f7f7;
 }
 
 .right-bar {
@@ -91,15 +85,6 @@
   padding-right: 100px;
 }
 
-.nav-right-cont {
-  margin: 30px;
-  padding-left: 50px;
-  width: 65rem;
-  padding: 25px;
-  display: flex;
-  flex-direction: row;
-}
-
 .painel-center {
   display: flex;
   width: 100%;
@@ -112,9 +97,8 @@
   display: flex;
   width: 40rem;
 }
-.cont-itens img{
+.cont-itens img {
   height: 15rem;
-
 }
 .itens-buttons {
   margin-top: 1rem;
@@ -124,10 +108,11 @@
   display: flex;
   flex-direction: row;
   /* gap: 28px; */
-  min-width: 910px;
+  /* min-width: 910px; */
   padding-left: 0px;
   width: 100%;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .itens-buttons button {
   color: #8a8a8a;
@@ -158,16 +143,17 @@
 .card-painel {
   display: flex;
   background-color: #fff;
-  width: 29rem;
+  width: 440px;
   align-items: center;
   height: 10rem;
   border-radius: 20px;
   padding: 30px;
+  
   /* flex-wrap: wrap; */
 }
 .painel-link-text {
   flex-direction: column;
-  height: 120px;
+  /* height: 120px; */
   justify-content: center;
   padding-left: 20px;
 }
@@ -192,15 +178,53 @@
   color: #8c52ff;
   margin-bottom: 0 !important;
 }
+.all {
+  width: 65%;
+  height: 100%;
+}
+
+.right-painel-center {
+  /* background-color: #8c52ff; */
+  border-radius: 20px;
+  width: 435px;
+}
+.card-painel-center {
+  height: 95%;
+  background-color: #fff;
+  border-radius: 20px;
+}
 .card-painel-itens {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 16px ;
+  justify-content: space-between;
 }
-.right-painel-center{
-  background-color: #8c52ff;
-  width: 25rem;
+#right {
+  /* width: 100%; */
+  background-color: #f7f7f7;
+  border-left: 0.0625rem solid #e0e0e0;
 }
-.all {
+.nav-right-cont {
+  margin: 30px;
+  padding-left: 50px;
+  justify-content: space-between;
+  padding: 25px;
+  display: flex;
+  flex-direction: row;
+}
+.p-painel-center{
+  margin-bottom: .2rem ;
+}
+.itens-painel-center{
+  padding: 40px;
+  display: flex;
 
 }
+.itens-painel-center h1{
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+
+}
+
+
