@@ -159,16 +159,16 @@
 
 .card-painel-itens {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   flex-wrap: wrap;
-  gap: 1rem;
+  /* gap: .5rem; */
   /* justify-content: center; */
 }
 
 .card-painel-center {
-  height: 95%;
-  display: flex;
-  padding: 15px;
+  /* height: 95%; */
+  /* display: flex; */
+  /* padding: 15px; */
   flex-direction: column;
   /* justify-content: space-between; */
   background-color: #fff;
