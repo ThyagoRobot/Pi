@@ -145,6 +145,7 @@
   background-color: #fff;
   align-items: center;
   height: 10rem;
+  flex-direction: row-reverse;
   border-radius: 20px;
   padding: 30px;
   
